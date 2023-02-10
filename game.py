@@ -4,10 +4,10 @@ import sys
 pygame.init()
 screen_dimensions = (400,400)
 screen = pygame.display.set_mode(screen_dimensions)
-bg_img = pygame.image.load("python small projects/Assets/bg2.jpg")
-bg_width = bg_img.get_rect().width
-bg_height = bg_img.get_rect().height
-scaled_bg = pygame.transform.smoothscale(bg_img,(screen_dimensions[0],screen_dimensions[1]))
+# bg_img = pygame.image.load("python small projects/Assets/bg2.jpg")
+# bg_width = bg_img.get_rect().width
+# bg_height = bg_img.get_rect().height
+# scaled_bg = pygame.transform.smoothscale(bg_img,(screen_dimensions[0],screen_dimensions[1]))
 
 class Player:
     def __init__(self,x,y,width,height,x_vel,y_vel):
@@ -71,7 +71,7 @@ while running:
 
     mainPlayer.draw()
     pygame.display.flip()
-    screen.blit(scaled_bg,(0,0))
-    #screen.fill((255,255,255))
+    #screen.blit(scaled_bg,(0,0))
+    screen.fill((255,255,255))
 
 
